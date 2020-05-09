@@ -124,7 +124,7 @@ module Sord
     # @return [String]
     def self.yard_to_sorbet(yard, item = nil, replace_errors_with_untyped = false, replace_unresolved_with_untyped = false)
       case yard
-      when nil # Type not specified
+      when nil, "untyped", "Untyped" # Type not specified or explicitly set to untyped
         "T.untyped"
       when  "bool", "Bool", "boolean", "Boolean", "true", "false"
         "T::Boolean"
@@ -137,7 +137,7 @@ module Sord
           .reject { |x| x == 'nil' }
           .map { |x| yard_to_sorbet(x, item, replace_errors_with_untyped, replace_unresolved_with_untyped) }
           .uniq
-        result = types.length == 1 ? types.first : "T.any(#{types.join(', ')})"
+        result = types.length == 1 ? types.first : "T.any(#{types.sort.join(', ')})"
         result = "T.nilable(#{result})" if yard.include?('nil')
         result
       when /^#{SIMPLE_TYPE_REGEX}$/
