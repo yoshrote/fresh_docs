@@ -1,9 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 require('yard')
-require('sorbet-runtime')
-require('sord/type_converter')
-require_relative('./lib/pricing_engine')
+require('fresh_docs/sord/type_converter')
 
 PASS_WITH_NO_SORBET_SIG = true
 
