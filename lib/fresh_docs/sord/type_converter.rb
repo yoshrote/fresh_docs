@@ -21,8 +21,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 require 'yaml'
-require 'sord/logging'
-require 'sord/resolver'
+require 'fresh_docs/sord/logging'
+require 'fresh_docs/sord/resolver'
 
 module FreshDocs
 module Sord
