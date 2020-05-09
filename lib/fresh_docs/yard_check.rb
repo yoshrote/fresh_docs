@@ -116,6 +116,7 @@ module FreshDocs
       failed_location.sort_by { |_k, v| -v.size }.each do |key, value|
         puts "#{key}: #{value.size}"
       end
+      failed.size == 0
     end
   end
 end
