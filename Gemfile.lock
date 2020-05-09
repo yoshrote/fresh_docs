@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rainbow (3.0.0)
+    yard (0.9.25)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rainbow (~> 3.0)
+  yard (~> 0.9.25)
+
+BUNDLED WITH
+   1.17.2
