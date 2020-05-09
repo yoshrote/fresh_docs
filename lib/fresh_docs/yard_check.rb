@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 require('yard')
 require('fresh_docs/sord/type_converter')
+require('sorbet-runtime')
 
 PASS_WITH_NO_SORBET_SIG = true
 

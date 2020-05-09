@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     rainbow (3.0.0)
+    sorbet-runtime (0.5.5605)
     yard (0.9.25)
 
 PLATFORMS
@@ -9,6 +10,7 @@ PLATFORMS
 
 DEPENDENCIES
   rainbow (~> 3.0)
+  sorbet-runtime (~> 0.5.5605)
   yard (~> 0.9.25)
 
 BUNDLED WITH
