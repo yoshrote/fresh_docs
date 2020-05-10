@@ -4,7 +4,7 @@
 package_to_check = ARGV[0]
 
 require "bundler/setup"
-require "fresh_docs"
+require "yard_check"
 require package_to_check
 
-exit(FreshDocs::YardCheck.new.run(package_to_check))
+exit(YardCheck::YardCheck.new.run(package_to_check))

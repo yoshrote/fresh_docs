@@ -1,9 +1,9 @@
 # frozen_string_literal: true
-require_relative "lib/fresh_docs/version"
+require_relative "lib/yard_check/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = 'fresh_docs'
-  spec.version       = FreshDocs::VERSION
+  spec.name          = 'yard_check'
+  spec.version       = YardCheck::VERSION
   spec.authors       = [
     "Joshua Forman",
   ]

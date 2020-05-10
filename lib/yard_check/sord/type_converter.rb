@@ -21,10 +21,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 require 'yaml'
-require 'fresh_docs/sord/logging'
-require 'fresh_docs/sord/resolver'
+require 'yard_check/sord/logging'
+require 'yard_check/sord/resolver'
 
-module FreshDocs
+module YardCheck
 module Sord
   # Contains methods to convert YARD types to Sorbet types.
   module TypeConverter

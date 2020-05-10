@@ -21,7 +21,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 require 'rainbow'
-module FreshDocs
+module YardCheck
 module Sord
   # Handles writing logs to stdout and any other classes which request them.
   module Logging

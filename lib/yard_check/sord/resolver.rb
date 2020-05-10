@@ -22,7 +22,7 @@
 # THE SOFTWARE.
 require 'stringio'
 
-module FreshDocs
+module YardCheck
 module Sord
   module Resolver
     # @return [void]

@@ -1,12 +1,12 @@
 # typed: false
 # frozen_string_literal: true
 require('yard')
-require('fresh_docs/sord/type_converter')
+require('yard_check/sord/type_converter')
 require('sorbet-runtime')
 
 PASS_WITH_NO_SORBET_SIG = true
 
-module FreshDocs
+module YardCheck
   class YardCheck
     def convert_sorbet_to_yard(sig)
       if sig.is_a?(T::Types::TypedArray)
