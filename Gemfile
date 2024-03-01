@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "yard", "~> 0.9.25"
+gem "yard", "~> 0.9.36"
 
 gem "rainbow", "~> 3.0"
 
